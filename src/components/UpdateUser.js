@@ -41,7 +41,7 @@ export const UpdateUser = (props) => {
         <Label>Name</Label>
         <Input type="text" value={selectedUser.name} onChange={onChange} name="name" placeholder="Enter user" required/>
       </FormGroup>
-      <Button type="submit">Update Name</Button>
+      <Button type="submit" className="btn-warning">Update Name</Button>
       <Link to="/" className="btn btn-danger ml-2">Cancel</Link>
     </Form>
   )
