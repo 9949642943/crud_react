@@ -35,7 +35,7 @@ export const CreateUser = () => {
         <Label>Name</Label>
         <Input type="text" value={name} onChange={onChange} name="name" placeholder="Enter user" required></Input>
       </FormGroup>
-      <Button type="submit">Submit</Button>
+      <Button type="submit" className="btn-warning">Submit</Button>
       <Link to="/" className="btn btn-danger ml-2">Cancel</Link>
     </Form>
   )
