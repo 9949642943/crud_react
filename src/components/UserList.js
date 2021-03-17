@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 
 const UserList = () => {
-    const { users } = useContext(GlobalContext)
+    const { users, removeUser } = useContext(GlobalContext);
     return (
         <ListGroup className="mt-4">
             {users.map(user => (
@@ -17,10 +17,10 @@ const UserList = () => {
                 <strong>{user.name}</strong>
                 <div className="ml-auto">
                     <Link className="btn btn-warning mr-auto d-flex" to={`/update/${user.id}`}>Update</Link>
-                    <Button color="danger">Delete</Button>
+                    <Button onClick={() => removeUser(user.id)} color="danger">Delete</Button>
                 </div>
             </ListGroupItem>
-            ))}
+    ))}
             
             
         </ListGroup>
