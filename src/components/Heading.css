@@ -1,0 +1,23 @@
+
+   .rows {
+    display: flex;
+    background-color: black;
+    margin: 16px 24px 16px 0px;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  .btn {
+      margin-left: 250px;
+      margin-top: 15px;
+  }
+   .a {
+      color: #fff;
+      font-weight: 700;
+      font-size: large;
+      justify-items: center;
+      
+      
+  }
+   
